@@ -1,5 +1,5 @@
 <?php
-namespace Test\Mock\Types;
+namespace Tests\Mock\Types;
 
 class TestType {
 

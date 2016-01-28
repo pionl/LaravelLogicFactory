@@ -1,5 +1,5 @@
 <?php
-namespace Test\Mock;
+namespace Tests\Mock;
 
 use Pion\Support\Logic\LogicFactory;
 

@@ -1,10 +1,10 @@
 <?php
-namespace Test;
+namespace Tests;
 
 use Prophecy\Exception\Doubler\ClassNotFoundException;
-use Test\Mock\AbstractFactory;
-use Test\Mock\TypeFactory;
-use Test\Mock\Types\TestType;
+use Tests\Mock\AbstractFactory;
+use Tests\Mock\TypeFactory;
+use Tests\Mock\Types\TestType;
 
 class LogicFactoryTest extends \PHPUnit_Framework_TestCase
 {
@@ -15,6 +15,8 @@ class LogicFactoryTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
+        parent::setUp();
+
         $this->factory = new TypeFactory(TypeFactory::TYPE_TEST);
     }
 
@@ -103,7 +105,7 @@ class LogicFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testLogicNamespace()
     {
-        $this->assertEquals("Test\\Mock\\Types", TypeFactory::logicNamespace(),
+        $this->assertEquals("Tests\\Mock\\Types", TypeFactory::logicNamespace(),
             "The namespace must be correct to the namespace of class. Defines locaiton of
             logic classes");
     }

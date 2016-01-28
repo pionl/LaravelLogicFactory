@@ -123,7 +123,7 @@ abstract class LogicFactory
         $class = static::logicNamespace() . "\\" . $this->createLogicClassName();
 
         if (!class_exists($class)) {
-            throw new ClassNotFoundException("Class not found", $class);
+            throw new ClassNotFoundException("Class not found: ".$class, $class);
         }
 
         // create new class

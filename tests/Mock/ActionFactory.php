@@ -5,17 +5,14 @@ use Pion\Support\Logic\LogicFactory;
 use Illuminate\Support\Collection;
 
 /**
- * Class TypeFactory
+ * Class ActionFactory
  *
- * The basic factory that creates a list of actions and uses the const
- * for easier usage in other parts of code.
+ * Example of different factory.
  *
  * @package Test\Mock
  */
-class TypeFactory extends LogicFactory
+class ActionFactory extends LogicFactory
 {
-    const TYPE_TEST = "TestType";
-    const TYPE_TEST_TITLE = "Testing type";
 
     /**
      * Must be setted on every subclass
@@ -30,7 +27,7 @@ class TypeFactory extends LogicFactory
     static function createLogicList()
     {
         return new Collection([
-            self::TYPE_TEST => self::TYPE_TEST_TITLE
+            "TestAction" => "Action"
         ]);
     }
 
@@ -41,6 +38,6 @@ class TypeFactory extends LogicFactory
      */
     static function logicNamespace()
     {
-        return __NAMESPACE__."\\Types";
+        return __NAMESPACE__."\\Actions";
     }
 }
