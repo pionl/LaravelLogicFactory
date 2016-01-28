@@ -5,6 +5,10 @@ A class that support quick creation of logic classes from the LogicFactory. When
 * Fully unit tested.
 * Easy usage.
 
+## Instalation
+
+    composer require pion/laravel-logic-factory
+
 ## Content
 
 * [Usage](#usage)
