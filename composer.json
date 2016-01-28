@@ -1,0 +1,28 @@
+{
+  "name": "pion/laravel-logic-factory",
+  "description": "The abstract LogicFactory for easier logic classes",
+  "require": {
+    "illuminate/support": "5.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pion\\Support\\Logic\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\" : "tests/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martin Kluska",
+      "email": "martin.kluska@imakers.cz"
+    }
+  ],
+  "minimum-stability": "stable"
+}
